@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | NLP Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style5.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">NLP Hub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Learn NLP</a></li>
+        <li class="nav-item"><a class="nav-link" href="data.html">Datasets</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold mb-3">Get in Touch</h1>
+    <p class="lead">We'd love to hear from you! Share your feedback, questions, or suggestions.</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Contact Form -->
+      <div class="col-lg-7">
+        <div class="contact-card">
+          <h2 class="fw-bold mb-4">Send Us a Message</h2>
+          
+          <div class="alert alert-success" id="successMessage">
+            <strong>✓ Message Sent!</strong> Thank you for reaching out. We'll get back to you soon.
+          </div>
+          
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Full Name *</label>
+                <input type="text" class="form-control" placeholder="John Doe" required>
+              </div>
+              
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Email Address *</label>
+                <input type="email" class="form-control" placeholder="john@example.com" required>
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <label class="form-label">Subject *</label>
+              <select class="form-select" required>
+                <option value="">Select a topic...</option>
+                <option value="general">General Inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="dataset">Dataset Request</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="bug">Report an Issue</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="mb-3">
+              <label class="form-label">Message *</label>
+              <textarea class="form-control" rows="6" placeholder="Tell us what's on your mind..." required></textarea>
+            </div>
+            
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox" id="newsletter">
+              <label class="form-check-label" for="newsletter">
+                Subscribe to NLP Hub newsletter for updates and new resources
+              </label>
+            </div>
+            
+            <button type="submit" class="btn btn-submit w-100">
+              <span>Send Message</span> 📧
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="col-lg-5">
+        <div class="contact-card">
+          <h2 class="fw-bold mb-4">Contact Information</h2>
+          
+          <div class="info-box">
+            <div class="d-flex align-items-center">
+              <div class="info-icon">📧</div>
+              <div>
+                <h6 class="fw-bold mb-1">Email</h6>
+                <p class="text-muted mb-0">contact@nlphub.com</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="info-box">
+            <div class="d-flex align-items-center">
+              <div class="info-icon">🌐</div>
+              <div>
+                <h6 class="fw-bold mb-1">Community Forum</h6>
+                <p class="text-muted mb-0">Join discussions with learners worldwide</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="info-box">
+            <div class="d-flex align-items-center">
+              <div class="info-icon">💬</div>
+              <div>
+                <h6 class="fw-bold mb-1">Discord Server</h6>
+                <p class="text-muted mb-0">Real-time chat with NLP enthusiasts</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="info-box">
+            <div class="d-flex align-items-center">
+              <div class="info-icon">⏰</div>
+              <div>
+                <h6 class="fw-bold mb-1">Response Time</h6>
+                <p class="text-muted mb-0">We typically respond within 24-48 hours</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-4">
+            <h5 class="fw-bold mb-3 text-center">Follow Us</h5>
+            <div class="social-links">
+              <a href="#" class="social-icon" title="GitHub">
+                <span>📚</span>
+              </a>
+              <a href="#" class="social-icon" title="Twitter">
+                <span>🐦</span>
+              </a>
+              <a href="#" class="social-icon" title="LinkedIn">
+                <span>💼</span>
+              </a>
+              <a href="#" class="social-icon" title="YouTube">
+                <span>▶️</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">Frequently Asked Questions</h2>
+    
+    <div class="row">
+      <div class="col-lg-6 mb-3">
+        <div class="faq-item">
+          <h5 class="fw-bold mb-2">❓ Is NLP Hub completely free?</h5>
+          <p class="text-muted mb-0">Yes! All our resources, datasets previews, and learning materials are 100% free. We believe in making NLP education accessible to everyone.</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 mb-3">
+        <div class="faq-item">
+          <h5 class="fw-bold mb-2">❓ Can I contribute to NLP Hub?</h5>
+          <p class="text-muted mb-0">Absolutely! We welcome contributions including tutorials, dataset additions, and resource recommendations. Contact us to learn how you can contribute.</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 mb-3">
+        <div class="faq-item">
+          <h5 class="fw-bold mb-2">❓ Do you offer certifications?</h5>
+          <p class="text-muted mb-0">Currently, we're a learning resource platform. However, we're exploring partnerships with educational institutions for future certification programs.</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 mb-3">
+        <div class="faq-item">
+          <h5 class="fw-bold mb-2">❓ How often is content updated?</h5>
+          <p class="text-muted mb-0">We continuously update our resources to reflect the latest NLP research, tools, and best practices. Major updates are released monthly.</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 mb-3">
+        <div class="faq-item">
+          <h5 class="fw-bold mb-2">❓ Can I download datasets from here?</h5>
+          <p class="text-muted mb-0">We provide previews and information about famous datasets. For full datasets, we link to original sources where you can download them directly.</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 mb-3">
+        <div class="faq-item">
+          <h5 class="fw-bold mb-2">❓ Do you offer personalized learning paths?</h5>
+          <p class="text-muted mb-0">We're developing personalized learning recommendations! Contact us if you'd like to be notified when this feature launches.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3">Start Your NLP Journey Today</h2>
+    <p class="text-muted mb-4">Don't wait! Explore our comprehensive learning resources and datasets.</p>
+    <div>
+      <a href="about.html" class="btn btn-primary btn-lg px-5 me-3">Start Learning</a>
+      <a href="data.html" class="btn btn-outline-primary btn-lg px-5">Browse Datasets</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-light text-center py-4">
+  <div class="container">
+    <p class="mb-0">© 2026 NLP Hub | Making NLP Accessible to Everyone</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Form submission handler
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Show success message
+    document.getElementById('successMessage').style.display = 'block';
+    
+    // Reset form
+    this.reset();
+    
+    // Scroll to success message
+    document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    
+    // Hide message after 5 seconds
+    setTimeout(function() {
+      document.getElementById('successMessage').style.display = 'none';
+    }, 5000);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+    :root {
+      --primary-color: #0d0c30;
+      --secondary-color: #0d2024;
+    }
+    
+    .navbar {
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+    }
+    
+    .page-header {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      color: white;
+      padding: 3rem 0;
+    }
+    
+    .dataset-card {
+      border: none;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+    
+    .dataset-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    
+    .dataset-badge {
+      display: inline-block;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin: 0 5px 5px 0;
+    }
+    
+    .badge-sentiment { background: #dbeafe; color: #1e40af; }
+    .badge-qa { background: #fef3c7; color: #92400e; }
+    .badge-ner { background: #d1fae5; color: #065f46; }
+    .badge-translation { background: #fce7f3; color: #9f1239; }
+    .badge-classification { background: #e0e7ff; color: #3730a3; }
+    
+    .preview-table {
+      font-size: 0.9rem;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    
+    .sample-text {
+      font-style: italic;
+      color: #475569;
+      max-width: 400px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .btn-view {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      border: none;
+      color: white;
+    }
+    
+    .btn-view:hover {
+      opacity: 0.9;
+      color: white;
+    }
+    
+    .dataset-stats {
+      background: #f8fafc;
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+    
+    .stat-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .stat-item:last-child {
+      border-bottom: none;
+    }

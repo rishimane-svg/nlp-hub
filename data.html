@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NLP Datasets | NLP Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style2.css" rel="stylesheet">
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html"><style>
+    :root {
+      --primary-color: #4f46e5;
+      --secondary-color: #06b6d4;
+    }
+    
+    .navbar {
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+    }
+    
+    .page-header {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      color: white;
+      padding: 3rem 0;
+    }
+    
+    .resource-section {
+      padding: 3rem 0;
+    }
+    
+    .resource-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--primary-color);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+      transition: all 0.3s ease;
+    }
+    
+    .resource-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    
+    .resource-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: white;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+    
+    .category-badge {
+      display: inline-block;
+      padding: 5px 12px;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .badge-beginner { background: #dbeafe; color: #1e40af; }
+    .badge-intermediate { background: #fef3c7; color: #92400e; }
+    .badge-advanced { background: #fee2e2; color: #991b1b; }
+    .badge-free { background: #d1fae5; color: #065f46; }
+    .badge-paid { background: #e0e7ff; color: #3730a3; }
+    
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      position: relative;
+      padding-bottom: 1rem;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    }
+    
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .tool-item {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      padding: 1.5rem;
+      border-radius: 12px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+    
+    .tool-item:hover {
+      border-color: var(--primary-color);
+      background: white;
+      box-shadow: 0 8px 16px rgba(79, 70, 229, 0.2);
+    }
+    
+    .tool-logo {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    .paper-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .paper-item {
+      background: #f8fafc;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      border-left: 3px solid var(--secondary-color);
+    }
+    
+    .external-link {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    
+    .external-link:hover {
+      color: var(--secondary-color);
+      text-decoration: underline;
+    }
+    
+    .quick-links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    
+    .quick-link-box {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      border: 2px solid #e2e8f0;
+      transition: all 0.3s ease;
+    }
+    
+    .quick-link-box:hover {
+      border-color: var(--primary-color);
+      transform: translateY(-3px);
+    }
+  </style> NLP Hub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Learn NLP</a></li>
+        <li class="nav-item"><a class="nav-link active" href="data.html">Datasets</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold mb-3">Famous NLP Datasets</h1>
+    <p class="lead">Explore industry-standard datasets used in research and production</p>
+  </div>
+</section>
+
+<!-- DATASETS SECTION -->
+<section class="py-5">
+  <div class="container">
+    
+    <!-- IMDB Dataset -->
+    <div class="card dataset-card shadow-sm mb-4">
+      <div class="card-body p-4">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <div>
+            <h3 class="card-title fw-bold mb-2">IMDB Movie Reviews</h3>
+            <div>
+              <span class="dataset-badge badge-sentiment">Sentiment Analysis</span>
+              <span class="dataset-badge badge-classification">Binary Classification</span>
+            </div>
+          </div>
+          <button class="btn btn-view" data-bs-toggle="collapse" data-bs-target="#imdb-preview">View Preview</button>
+        </div>
+        
+        <p class="text-muted mb-3">A dataset of 50,000 highly polarized movie reviews for sentiment analysis. Each review is labeled as positive or negative.</p>
+        
+        <div class="dataset-stats">
+          <div class="stat-item">
+            <span class="text-muted">Total Samples:</span>
+            <strong>50,000</strong>
+          </div>
+          <div class="stat-item">
+            <span class="text-muted">Train/Test Split:</span>
+            <strong>25,000 / 25,000</strong>
+          </div>
+          <div class="stat-item">
+            <span class="text-muted">Classes:</span>
+            <strong>Positive, Negative</strong>
+          </div>
+        </div>
+        
+        <div class="collapse mt-3" id="imdb-preview">
+          <h5 class="mb-3">Sample Data:</h5>
+          <div class="table-responsive preview-table">
+            <table class="table table-bordered table-striped">
+              <thead class="table-dark">
+                <tr>
+                  <th>Review Text</th>
+                  <th style="width: 120px;">Sentiment</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="sample-text">This movie was absolutely brilliant. The storyline, acting, and cinematography were all top-notch...</td>
+                  <td><span class="badge bg-success">Positive</span></td>
+                </tr>
+                <tr>
+                  <td class="sample-text">One of the worst films I've ever seen. The plot made no sense and the acting was terrible...</td>
+                  <td><span class="badge bg-danger">Negative</span></td>
+                </tr>
+                <tr>
+                  <td class="sample-text">A masterpiece! Every scene was perfectly crafted and the emotional depth was incredible...</td>
+                  <td><span class="badge bg-success">Positive</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SST-2 Dataset -->
+    <div class="card dataset-card shadow-sm mb-4">
+      <div class="card-body p-4">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <div>
+            <h3 class="card-title fw-bold mb-2">SST-2 (Stanford Sentiment Treebank)</h3>
+            <div>
+              <span class="dataset-badge badge-sentiment">Sentiment Analysis</span>
+              <span class="dataset-badge badge-classification">Sentence-Level</span>
+            </div>
+          </div>
+          <button class="btn btn-view" data-bs-toggle="collapse" data-bs-target="#sst2-preview">View Preview</button>
+        </div>
+        
+        <p class="text-muted mb-3">Movie review sentences with fine-grained sentiment labels. Part of the GLUE benchmark for evaluating language understanding.</p>
+        
+        <div class="dataset-stats">
+          <div class="stat-item">
+            <span class="text-muted">Total Samples:</span>
+            <strong>70,042</strong>
+          </div>
+          <div class="stat-item">
+            <span class="text-muted">Train/Dev/Test:</span>
+            <strong>67,349 / 872 / 1,821</strong>
+          </div>
+          <div class="stat-item">
+            <span class="text-muted">Classes:</span>
+            <strong>Positive, Negative</strong>
+          </div>
+        </div>
+        
+        <div class="collapse mt-3" id="sst2-preview">
+          <h5 class="mb-3">Sample Data:</h5>
+          <div class="table-responsive preview-table">
+            <table class="table table-bordered table-striped">
+              <thead class="table-dark">
+                <tr>
+                  <th>Sentence</th>
+                  <th style="width: 120px;">Label</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A stirring, funny and finally transporting re-imagining of beauty and the beast.</td>
+                  <td><span class="badge bg-success">Positive</span></td>
+                </tr>
+                <tr>
+                  <td>Unflinchingly bleak and desperate.</td>
+                  <td><span class="badge bg-danger">Negative</span></td>
+                </tr>
+                <tr>
+                  <td>Offers that rare combination of entertainment and education.</td>
+                  <td><span class="badge bg-success">Positive</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SQuAD Dataset -->
+    <div class="card dataset-card shadow-sm mb-4">
+      <div class="card-body p-4">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <div>
+            <h3 class="card-title fw-bold mb-2">SQuAD (Stanford Question Answering)</h3>
+            <div>
+              <span class="dataset-badge badge-qa">Question Answering</span>
+              <span class="dataset-badge badge-classification">Reading Comprehension</span>
+            </div>
+          </div>
+          <button class="btn btn-view" data-bs-toggle="collapse" data-bs-target="#squad-preview">View Preview</button>
+        </div>
+        
+        <p class="text-muted mb-3">A reading comprehension dataset with questions posed on Wikipedia articles. Answers are spans of text from the passage.</p>
+        
+        <div class="dataset-stats">
+          <div class="stat-item">
+            <span class="text-muted">Total Questions:</span>
+            <strong>100,000+</strong>
+          </div>
+          <div class="stat-item">
+            <span class="text-muted">Articles:</span>
+            <strong>500+</strong>
+          </div>
+          <div class="stat-item">
+            <span class="text-muted">Version:</span>
+            <strong>SQuAD 1.1 & 2.0</strong>
+          </div>
+        </div>
+        
+        <div class="collapse mt-3" id="squad-preview">
+          <h5 class="mb-3">Sample Data:</h5>
+          <div class="table-responsive preview-table">
+            <table class="table table-bordered table-striped">
+              <thead class="table-dark">
+                <tr>
+                  <th>Question</th>
+                  <th>Context Snippet</th>
+                  <th style="width: 150px;">Answer</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>When did Beyonce start becoming popular?</td>
+                  <td class="sample-text">...Beyoncé Giselle Knowles-Carter rose to fame in the late 1990s with Destiny's Child...</td>
+                  <td>late 1990s</td>
+                </tr>
+                <tr>
+                  <td>What is the capital of France?</td>
+                  <td class="sample-text">...Paris is the capital and most populous city of France...</td>
+                  <td>Paris</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CoNLL-2003 Dataset -->
+    <div class="card dataset-card shadow-sm mb-4">
+      <div class="card-body p-4">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <div>
+            <h3 class="card-title fw-bold mb-2">CoNLL-2003 (Named Entity Recognition)</h3>
+            <div>
+              <span class="dataset-badge badge-ner">NER</span>
+              <span class="dataset-badge badge-classification">Token Classification</span>
+            </div>
+          </div>
+          <button class="btn btn-view" data-bs-toggle="collapse" data-bs-target="#conll-preview">View Preview</button>
+        </div>
+        
+        <p class="text-muted mb-3">Annotated corpus for Named Entity Recognition with entities like persons, organizations, locations, and miscellaneous.</p>
+        
+        <div class="dataset-stats">
+          <div class="stat-item">
+            <span class="text-muted">Total Tokens:</span>
+            <strong>~300,000</strong>
+          </div>
+          <div class="stat-item">
+            <span class="text-muted">Entity Types:</span>
+            <strong>PER, ORG, LOC, MISC</strong>
+          </div>
+          <div class="stat-item">
+            <span class="text-muted">Language:</span>
+            <strong>English</strong>
+          </div>
+        </div>
+        
+        <div class="collapse mt-3" id="conll-preview">
+          <h5 class="mb-3">Sample Data:</h5>
+          <div class="table-responsive preview-table">
+            <table class="table table-bordered table-striped">
+              <thead class="table-dark">
+                <tr>
+                  <th>Token</th>
+                  <th style="width: 150px;">Entity Label</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Barack</td><td><span class="badge bg-info">B-PER</span></td></tr>
+                <tr><td>Obama</td><td><span class="badge bg-info">I-PER</span></td></tr>
+                <tr><td>visited</td><td><span class="badge bg-secondary">O</span></td></tr>
+                <tr><td>Google</td><td><span class="badge bg-warning text-dark">B-ORG</span></td></tr>
+                <tr><td>in</td><td><span class="badge bg-secondary">O</span></td></tr>
+                <tr><td>California</td><td><span class="badge bg-success">B-LOC</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AG News Dataset -->
+    <div class="card dataset-card shadow-sm mb-4">
+      <div class="card-body p-4">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <div>
+            <h3 class="card-title fw-bold mb-2">AG News</h3>
+            <div>
+              <span class="dataset-badge badge-classification">Text Classification</span>
+              <span class="dataset-badge badge-classification">News Categorization</span>
+            </div>
+          </div>
+          <button class="btn btn-view" data-bs-toggle="collapse" data-bs-target="#agnews-preview">View Preview</button>
+        </div>
+        
+        <p class="text-muted mb-3">News articles categorized into four classes: World, Sports, Business, and Sci/Tech.</p>
+        
+        <div class="dataset-stats">
+          <div class="stat-item">
+            <span class="text-muted">Total Samples:</span>
+            <strong>120,000</strong>
+          </div>
+          <div class="stat-item">
+            <span class="text-muted">Train/Test:</span>
+            <strong>120,000 / 7,600</strong>
+          </div>
+          <div class="stat-item">
+            <span class="text-muted">Categories:</span>
+            <strong>4 (World, Sports, Business, Sci/Tech)</strong>
+          </div>
+        </div>
+        
+        <div class="collapse mt-3" id="agnews-preview">
+          <h5 class="mb-3">Sample Data:</h5>
+          <div class="table-responsive preview-table">
+            <table class="table table-bordered table-striped">
+              <thead class="table-dark">
+                <tr>
+                  <th>Title</th>
+                  <th>Description</th>
+                  <th style="width: 120px;">Category</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Wall St. Bears Claw Back</td>
+                  <td class="sample-text">After the worst week for stocks...</td>
+                  <td><span class="badge bg-primary">Business</span></td>
+                </tr>
+                <tr>
+                  <td>AI Breakthrough</td>
+                  <td class="sample-text">Scientists develop new machine learning algorithm...</td>
+                  <td><span class="badge bg-info">Sci/Tech</span></td>
+                </tr>
+                <tr>
+                  <td>Champions League Final</td>
+                  <td class="sample-text">The most anticipated match of the season...</td>
+                  <td><span class="badge bg-success">Sports</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Multi30k Dataset -->
+    <div class="card dataset-card shadow-sm mb-4">
+      <div class="card-body p-4">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <div>
+            <h3 class="card-title fw-bold mb-2">Multi30k</h3>
+            <div>
+              <span class="dataset-badge badge-translation">Machine Translation</span>
+              <span class="dataset-badge badge-classification">Multilingual</span>
+            </div>
+          </div>
+          <button class="btn btn-view" data-bs-toggle="collapse" data-bs-target="#multi30k-preview">View Preview</button>
+        </div>
+        
+        <p class="text-muted mb-3">Image descriptions in English, German, French, and Czech. Used for machine translation and multimodal tasks.</p>
+        
+        <div class="dataset-stats">
+          <div class="stat-item">
+            <span class="text-muted">Total Samples:</span>
+            <strong>31,014</strong>
+          </div>
+          <div class="stat-item">
+            <span class="text-muted">Languages:</span>
+            <strong>English, German, French, Czech</strong>
+          </div>
+          <div class="stat-item">
+            <span class="text-muted">Task:</span>
+            <strong>Image Captioning & Translation</strong>
+          </div>
+        </div>
+        
+        <div class="collapse mt-3" id="multi30k-preview">
+          <h5 class="mb-3">Sample Data:</h5>
+          <div class="table-responsive preview-table">
+            <table class="table table-bordered table-striped">
+              <thead class="table-dark">
+                <tr>
+                  <th>English</th>
+                  <th>German</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A man in an orange hat starring at something.</td>
+                  <td>Ein Mann mit einem orangen Hut starrt auf etwas.</td>
+                </tr>
+                <tr>
+                  <td>A Boston Terrier is running on lush green grass.</td>
+                  <td>Ein Boston Terrier läuft über saftig-grünes Gras.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-light py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3">Want to Learn How to Use These Datasets?</h2>
+    <p class="text-muted mb-4">Explore our comprehensive NLP learning resources and tutorials</p>
+    <a href="about.html" class="btn btn-view btn-lg px-5">Start Learning</a>
+  </div>
+</section>
+
+<footer class="bg-dark text-light text-center py-4">
+  <div class="container">
+    <p class="mb-0">© 2026 NLP Hub | Making NLP Accessible to Everyone</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
