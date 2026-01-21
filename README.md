@@ -51,3 +51,19 @@ The website consists of the following pages:
 
 ## 📂 Project Folder Structure
 
+NLP-Hub/
+│
+├── index.html
+├── about.html
+├── data.html
+├── resources.html
+├── contact.html
+│
+├── css/
+│ ├── style1.css
+│ ├── style2.css
+│ ├── style3.css
+│ ├── style4.css
+│ └── style5.css
+│
+└── README.md
